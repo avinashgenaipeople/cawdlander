@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <div class="phone">
+  <div class="phone" id="lander">
     <div class="screen">
       <header>
         <div class="brand">
@@ -100,5 +100,10 @@
       </section>
     </div>
   </div>
+  <script>
+    document.getElementById("lander").addEventListener("click", function () {
+      window.location.href = "02-question-1.html";
+    });
+  </script>
 </body>
 </html>
