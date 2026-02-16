@@ -241,3 +241,64 @@ p {
   font-size: 12px;
   text-decoration: none;
 }
+
+.hero {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  color: white;
+  background:
+    linear-gradient(140deg, rgba(12, 17, 31, 0.92) 0%, rgba(12, 17, 31, 0.65) 55%, rgba(12, 17, 31, 0.35) 100%),
+    radial-gradient(120% 140% at 0% 100%, rgba(231, 65, 111, 0.45), transparent 60%),
+    radial-gradient(120% 140% at 100% 0%, rgba(12, 108, 242, 0.45), transparent 60%);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.hero h1, .hero p { color: white; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-block {
+  margin-top: 14px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.cta-block .btn {
+  margin-top: 0;
+  background: #2b7bff;
+  font-style: italic;
+}
+
+.trust-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.trust-chip {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+}
