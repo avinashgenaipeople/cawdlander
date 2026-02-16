@@ -1,0 +1,243 @@
+:root {
+  --ink: #0b0f19;
+  --muted: #6b7280;
+  --brand: #e7416f;
+  --brand-2: #111827;
+  --accent: #17c964;
+  --cta: #0c6cf2;
+  --bg: #f6f1ed;
+  --card: #ffffff;
+  --shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
+  --radius: 20px;
+  --radius-sm: 14px;
+  --ring: 2px solid rgba(231, 65, 111, 0.25);
+  --font: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at -5% -10%, #ffe3ec 0%, transparent 60%),
+    radial-gradient(1200px 600px at 105% -10%, #e3edff 0%, transparent 55%),
+    var(--bg);
+}
+
+.phone {
+  width: 390px;
+  margin: 28px auto 60px;
+  border-radius: 34px;
+  padding: 20px 14px 30px;
+  background: linear-gradient(180deg, #111 0%, #111 60px, transparent 60px), #0e0e11;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+.screen {
+  border-radius: 26px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+header {
+  background: #0e0e11;
+  color: white;
+  padding: 14px 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.crest {
+  width: 30px; height: 30px;
+  border-radius: 10px;
+  background: conic-gradient(from 210deg, #ffb3c7, #e7416f, #711b35);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.help-chip {
+  font-size: 12px;
+  background: #111827;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(23, 201, 100, 0.7);
+}
+
+.stage {
+  padding: 24px 18px 28px;
+  border-bottom: 1px solid #e6e1dd;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+h1 {
+  font-size: 26px;
+  margin: 8px 0 6px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.card {
+  margin: 16px 0 14px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.support-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #e6e1dd;
+  border-radius: var(--radius-sm);
+  background: #fff6f9;
+}
+
+.support-row strong { color: var(--brand); }
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.input {
+  height: 52px;
+  border-radius: 14px;
+  border: 1px solid #e2dde0;
+  padding: 0 14px;
+  background: white;
+  font-size: 16px;
+}
+
+.input:focus { outline: var(--ring); }
+
+.btn {
+  width: 100%;
+  height: 54px;
+  border-radius: 16px;
+  border: none;
+  background: var(--cta);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.btn.secondary { background: #0f172a; }
+
+.grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.option {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  font-weight: 600;
+}
+
+.stacked {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #138a4f;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.foot {
+  font-size: 11px;
+  color: #8a8f98;
+  margin-top: 12px;
+}
+
+.progress {
+  height: 6px;
+  background: #e4e7ec;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff9fb9, #e7416f);
+}
+
+.highlight {
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  border: 1px dashed #ffb6ca;
+  font-size: 13px;
+  color: #7b2d43;
+  margin-top: 14px;
+}
+
+.tiny { font-size: 12px; }
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.nav a {
+  flex: 1;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #111827;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
